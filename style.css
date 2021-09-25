@@ -89,7 +89,7 @@ body {
 }
 
 .hero {
-  background-image: url("/unnamed.jpg");
+  background-image: url("unnamed.jpg");
   background-size: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -218,7 +218,7 @@ section ul li {
 }
 
 .price-container {
-  background: url("/guitar6.jpg") center/cover;
+  background: url("guitar6.jpg") center/cover;
   background-repeat: no-repeat;
   border: 5px solid #000;
   display: flex;
@@ -301,7 +301,7 @@ section ul li {
 .faq.active {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  background: url("/guitar8.jpg") no-repeat center/cover;
+  background: url("guitar8.jpg") no-repeat center/cover;
   background-size: 50vw;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
