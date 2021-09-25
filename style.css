@@ -89,7 +89,7 @@ body {
 }
 
 .hero {
-  background-image: url("/images/unnamed.jpg");
+  background-image: url("/unnamed.jpg");
   background-size: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -120,7 +120,7 @@ body {
   font-size: 3vh;
 }
 
-.solid{
+.solid {
   border-top: #000 solid 3px;
 }
 
@@ -143,14 +143,14 @@ section {
   padding: 2px;
 }
 
-.aboutMeText{
+.aboutMeText {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
 }
 
-.aboutMeImage{
+.aboutMeImage {
   position: relative;
   width: 50vw;
   display: flex;
@@ -158,7 +158,7 @@ section {
   justify-content: center;
 }
 
-.guitar1{
+.guitar1 {
   height: 70vh;
   width: auto;
   background-color: #000;
@@ -174,7 +174,7 @@ section ul li {
   list-style: none;
 }
 
-.image{
+.image {
   background-color: #000;
   display: flex;
   flex-direction: row;
@@ -184,7 +184,7 @@ section ul li {
   height: 80vh;
 }
 
-.andy-image{
+.andy-image {
   background-color: #c0392b;
   transform: rotate(-15deg);
   border: 15px solid;
@@ -193,7 +193,7 @@ section ul li {
   margin-left: 100px;
 }
 
-.testimonials{
+.testimonials {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -203,24 +203,24 @@ section ul li {
   text-align: center;
 }
 
-.testimonials span{
+.testimonials span {
   color: #fff;
   width: 70%;
 }
 
-.comment{
+.comment {
   font-size: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.author{
+.author {
   font-size: 2rem;
 }
 
-.price-container{
-  background: url('/images/guitar6.jpg') center/cover;
+.price-container {
+  background: url("/guitar6.jpg") center/cover;
   background-repeat: no-repeat;
-  border:5px solid #000;
+  border: 5px solid #000;
   display: flex;
   background-color: #fff;
   flex-direction: row;
@@ -229,17 +229,18 @@ section ul li {
   width: 100vw;
   height: auto;
   padding: 100px;
-  margin:auto;
+  margin: auto;
   margin-bottom: 100px;
 }
 
-.half-hour, .one-hour{
+.half-hour,
+.one-hour {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #afa6a6;
-  border:solid #000 2px;
+  border: solid #000 2px;
   border-radius: 10px;
   text-align: center;
   margin-bottom: 100px;
@@ -248,32 +249,34 @@ section ul li {
   padding: 2px;
 }
 
-.half-hour{
+.half-hour {
   margin-right: 50px;
 }
 
-.one-hour{
+.one-hour {
   margin-left: 50px;
 }
 
-.one-hour h3{
+.one-hour h3 {
   background-color: #000;
   padding: 0 40px;
   color: #fff;
 }
 
-
-.half-hour h1, .half-hour h2, .one-hour h1, .one-hour h2{
-  font-family: 'Montserrat', sans-serif;
+.half-hour h1,
+.half-hour h2,
+.one-hour h1,
+.one-hour h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
 
-.half-hour .fa-hourglass-half, .one-hour .fa-hourglass{
+.half-hour .fa-hourglass-half,
+.one-hour .fa-hourglass {
   font-size: 5rem;
 }
 
-
-#faq{
+#faq {
   font-family: "Lobster", cursive;
   text-align: center;
   font-size: 5rem;
@@ -298,7 +301,7 @@ section ul li {
 .faq.active {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  background: url('/images/guitar8.jpg') no-repeat center/cover;
+  background: url("/guitar8.jpg") no-repeat center/cover;
   background-size: 50vw;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
@@ -367,12 +370,12 @@ section ul li {
 .faq.active .faq-toggle {
   background-color: #9fa4a8;
   border-radius: 50%;
-  color: #000
+  color: #000;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
-  position:fixed;
+  position: fixed;
   bottom: 0;
   flex-direction: row;
   width: 100%;
@@ -382,7 +385,7 @@ section ul li {
   transition: all 0.3s ease-in-out;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,7 +396,7 @@ section ul li {
   font-size: 4rem;
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -404,12 +407,12 @@ section ul li {
   font-size: 2rem;
 }
 
-.contact-info a{
+.contact-info a {
   text-decoration: none;
   color: inherit;
 }
 
-.website-developer{
+.website-developer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -430,17 +433,16 @@ section ul li {
   font-size: 1.5rem;
 }
 
-.footer-container.active .contact-info{
+.footer-container.active .contact-info {
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 @media (max-width: 850px) {
   .nav h1 {
     font-size: 1.5rem;
   }
-  .nav a{
+  .nav a {
     font-size: 1rem;
   }
   .hero {
@@ -450,85 +452,90 @@ section ul li {
     font-size: 1rem;
     flex-direction: column;
   }
-  .andy-image{
+  .andy-image {
     width: 100vw;
   }
-  .price-container{
+  .price-container {
     width: 100%;
     height: 25%;
   }
-  .half-hour h1, .half-hour h2, .one-hour h1, .one-hour h2{
+  .half-hour h1,
+  .half-hour h2,
+  .one-hour h1,
+  .one-hour h2 {
     font-family: "Lobster", cursive;
     font-size: 1rem;
   }
-  .half-hour .fa-hourglass-half, .one-hour .fa-hourglass{
+  .half-hour .fa-hourglass-half,
+  .one-hour .fa-hourglass {
     font-size: 2rem;
   }
-    #faq{
+  #faq {
     font-size: 2rem;
   }
-  .faq-container{
+  .faq-container {
     max-width: 75vw;
     width: 95vw;
   }
-  .faq-title{
-  font-size: 0.7rem;
-  }
-  .faq-text{
+  .faq-title {
     font-size: 0.7rem;
   }
-  .footer-container{
+  .faq-text {
+    font-size: 0.7rem;
+  }
+  .footer-container {
     width: 100%;
     height: 15vh;
     background-color: #000;
     justify-content: center;
     align-items: center;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
-  .footer-container.active{
-    height:8vh;
+  .footer-container.active {
+    height: 8vh;
   }
 
-  .footer-container.active .contact{
+  .footer-container.active .contact {
     font-size: 1rem;
   }
-  .footer-container.active .contact-info{
+  .footer-container.active .contact-info {
     flex-direction: column;
     font-size: 0.5rem;
     justify-content: space-around;
   }
-  .contact{
+  .contact {
     font-size: 1rem;
   }
-  .contact-info{
+  .contact-info {
     font-size: 0.7rem;
   }
-  .website-developer{
+  .website-developer {
     font-size: 0.5rem;
   }
-  .comment{
+  .comment {
     font-size: 0.8rem;
   }
-  .author{
+  .author {
     font-size: 0.8rem;
   }
-  .image{
+  .image {
     flex-direction: column;
   }
-  .andy-image{
+  .andy-image {
     transform: rotate(0deg);
     height: 30vh;
     width: auto;
     margin: 0;
   }
-  .faq.active{
+  .faq.active {
     background-color: #fff;
   }
-  .guitar1{
-    height: 25vh;;
+  .guitar1 {
+    height: 25vh;
   }
-  .half-hour, .one-hour{
+  .half-hour,
+  .one-hour {
     height: 300px;
   }
 }
