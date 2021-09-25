@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+@import url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-padding-top: 6rem; /* Replace with your fixed navbar height */
+}
+
+body {
+  background: rgb(255, 249, 249);
+  background: radial-gradient(
+    circle,
+    rgba(255, 249, 249, 1) 0%,
+    rgba(50, 50, 50, 1) 100%
+  );
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.nav {
+  position: fixed;
+  background-color: transparent;
+  color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+.nav h1 {
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  padding: 0 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav.active h1 {
+  color: #000;
+  font-size: 2rem;
+}
+
+.nav.active {
+  background-color: #fff;
+}
+
+.nav.active a {
+  color: #000;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 10px rgba (0, 0, 0, 0.3);
+}
+
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("/images/unnamed.jpg");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  filter: blur(0px);
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .container h1 {
+  display: flex;
+  font-family: "Lobster", cursive;
+  font-size: 10vh;
+}
+
+.hero .container h3 {
+  text-align: center;
+  font-size: 3vh;
+}
+
+.solid{
+  border-top: #000 solid 3px;
+}
+
+#me {
+  font-family: "Lobster", cursive;
+  font-size: 5rem;
+  padding-bottom: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  width: 90vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 100px;
+  padding: 2px;
+}
+
+.aboutMeText{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.aboutMeImage{
+  position: relative;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guitar1{
+  height: 70vh;
+  width: auto;
+  background-color: #000;
+  transform: rotate(20deg);
+  border: 15px solid #000;
+}
+
+section p {
+  width: 50vw;
+}
+
+section ul li {
+  list-style: none;
+}
+
+.image{
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  height: 80vh;
+}
+
+.andy-image{
+  background-color: #c0392b;
+  transform: rotate(-15deg);
+  border: 15px solid;
+  outline: #c0392b;
+  color: #c0392b;
+  margin-left: 100px;
+}
+
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+  width: 75vw;
+  text-align: center;
+}
+
+.testimonials span{
+  color: #fff;
+  width: 70%;
+}
+
+.comment{
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.author{
+  font-size: 2rem;
+}
+
+.price-container{
+  background: url('/images/guitar6.jpg') center/cover;
+  background-repeat: no-repeat;
+  border:5px solid #000;
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 100px;
+  margin:auto;
+  margin-bottom: 100px;
+}
+
+.half-hour, .one-hour{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #afa6a6;
+  border:solid #000 2px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 100px;
+  height: 500px;
+  width: 400px;
+  padding: 2px;
+}
+
+.half-hour{
+  margin-right: 50px;
+}
+
+.one-hour{
+  margin-left: 50px;
+}
+
+.one-hour h3{
+  background-color: #000;
+  padding: 0 40px;
+  color: #fff;
+}
+
+
+.half-hour h1, .half-hour h2, .one-hour h1, .one-hour h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+
+.half-hour .fa-hourglass-half, .one-hour .fa-hourglass{
+  font-size: 5rem;
+}
+
+
+#faq{
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.faq-container {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background: url('/images/guitar8.jpg') no-repeat center/cover;
+  background-size: 50vw;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active:before,
+.faq.active:after {
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active:before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotate(180deg);
+}
+
+.faq-title {
+  font-size: 2rem;
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  font-size: 1.5rem;
+  display: none;
+  margin: 30px 0 0;
+  width: 20vw;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+  border-radius: 50%;
+  color: #000
+}
+
+.footer-container{
+  display: flex;
+  position:fixed;
+  bottom: 0;
+  flex-direction: row;
+  width: 100%;
+  height: 7vh;
+  background-color: transparent;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 33%;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 33%;
+  color: #c0392b;
+  font-size: 2rem;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.website-developer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 33%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-container.active {
+  height: 4vh;
+  color: #000;
+  background-color: #fff;
+}
+
+.footer-container.active .contact {
+  font-size: 1.5rem;
+}
+
+.footer-container.active .contact-info{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 850px) {
+  .nav h1 {
+    font-size: 1.5rem;
+  }
+  .nav a{
+    font-size: 1rem;
+  }
+  .hero {
+    background-size: 50vh;
+  }
+  section {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .andy-image{
+    width: 100vw;
+  }
+  .price-container{
+    width: 100%;
+    height: 25%;
+  }
+  .half-hour h1, .half-hour h2, .one-hour h1, .one-hour h2{
+    font-family: "Lobster", cursive;
+    font-size: 1rem;
+  }
+  .half-hour .fa-hourglass-half, .one-hour .fa-hourglass{
+    font-size: 2rem;
+  }
+    #faq{
+    font-size: 2rem;
+  }
+  .faq-container{
+    max-width: 75vw;
+    width: 95vw;
+  }
+  .faq-title{
+  font-size: 0.7rem;
+  }
+  .faq-text{
+    font-size: 0.7rem;
+  }
+  .footer-container{
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+  }
+  .footer-container.active{
+    height:8vh;
+  }
+
+  .footer-container.active .contact{
+    font-size: 1rem;
+  }
+  .footer-container.active .contact-info{
+    flex-direction: column;
+    font-size: 0.5rem;
+    justify-content: space-around;
+  }
+  .contact{
+    font-size: 1rem;
+  }
+  .contact-info{
+    font-size: 0.7rem;
+  }
+  .website-developer{
+    font-size: 0.5rem;
+  }
+  .comment{
+    font-size: 0.8rem;
+  }
+  .author{
+    font-size: 0.8rem;
+  }
+  .image{
+    flex-direction: column;
+  }
+  .andy-image{
+    transform: rotate(0deg);
+    height: 30vh;
+    width: auto;
+    margin: 0;
+  }
+  .faq.active{
+    background-color: #fff;
+  }
+  .guitar1{
+    height: 25vh;;
+  }
+  .half-hour, .one-hour{
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav h1 {
+    font-size: 1.5rem;
+  }
+  .hero {
+    background-size: 50vh;
+  }
+  section {
+    font-size: 0.8rem;
+  }
+  #me {
+    font-size: 1.5rem;
+  }
+}
